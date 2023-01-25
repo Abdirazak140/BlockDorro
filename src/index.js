@@ -49,6 +49,11 @@ app.on('activate', () => {
 // code. You can also put them in separate files and import them here.
 
 function toggleDarkMode() {
-  document.querySelector(body).style.classList.toggle("darkmode")
+  document.querySelector("body").classList.toggle("dark-mode");
+  document.querySelector("svg").classList.toggle("dark-toggle-icons");
+}
+
+function stopwatchSettings(){
   
+
 }
