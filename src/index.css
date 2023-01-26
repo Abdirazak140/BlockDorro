@@ -10,15 +10,17 @@ body{
   align-items: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgb(255, 255, 224),
-   rgb(225, 225, 255),  rgb(255, 201, 201));
+  background: linear-gradient(to right, white,
+   lightblue);
   background-size: 400% 400%;
   animation: animate-background 10s infinite ease-in-out;
 }
 
+
+/* Dark Mode */
 .dark-mode{
-  background: linear-gradient(to right, rgb(31, 31, 7),
-   rgb(6, 6, 43),  rgb(51, 5, 5));
+  background: linear-gradient(to right, rgb(24, 24, 24),
+   black);
   background-size: 400% 400%;
 }
 
@@ -26,9 +28,14 @@ body{
   color: white;
 }
 
-.dark-toggle-icons{
-  border: white;
+.white-icons{
+  fill: white;
 }
+
+.white-borders{
+  border: 5px solid white; 
+}
+/* -------------------- */
 
 @keyframes animate-background {
   0%{
@@ -42,9 +49,24 @@ body{
   }
 }
 
-form{
+.pop-up{
+  display: unset;
+}
+
+.settings-popup{
   display: none;
-  
+  border: solid black;
+  position: fixed;
+  bottom: 400px;
+  left: 150px;
+  width: 300px;
+  height: 100px;
+  background-color: white;
+}
+
+label{
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .main-container{
@@ -84,7 +106,7 @@ svg{
 }
 
 svg:hover{
-  fill: blue;
+  fill: red;
 }
 
 
@@ -137,11 +159,11 @@ svg:hover{
   border-radius: 17px;
   box-shadow: 0 11px #666;
   font-family:Arial, Helvetica, sans-serif;
-  background-color: blue;
+  background-color: red;
 }
 
 .but:hover{
-  background-color: lightblue;
+  background-color: lightcoral;
 }
 
 .but:active{

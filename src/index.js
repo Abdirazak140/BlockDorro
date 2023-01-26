@@ -50,10 +50,22 @@ app.on('activate', () => {
 
 function toggleDarkMode() {
   document.querySelector("body").classList.toggle("dark-mode");
-  document.querySelector("svg").classList.toggle("dark-toggle-icons");
+  let whiteSvg = document.querySelectorAll("svg");
+  for (let i=0; i < whiteSvg.length; i++){
+    whiteSvg[i].classList.toggle("white-icons");
+  };
+  document.querySelector(".settings-popup").classList.toggle("dark-mode");
+  document.querySelector("#pomodorro").classList.toggle("dark-mode");
+
+  let whiteDiv = document.querySelectorAll("div");
+  for (let i=0; i < whiteDiv.length; i++){
+    whiteDiv[i].classList.toggle("white-borders");
+  }
 }
 
+
+
 function stopwatchSettings(){
-  
+  document.querySelector(".settings-popup").classList.toggle("pop-up");
 
 }
