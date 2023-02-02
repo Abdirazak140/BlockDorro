@@ -66,6 +66,6 @@ function toggleDarkMode() {
 
 
 function stopwatchSettings(){
-  document.querySelector(".settings-popup").classList.toggle("pop-up");
+  document.querySelector(".settings-popup").classList.add("pop-up");
 
 }
